@@ -13,8 +13,8 @@
   --rule-strong: #8a8a8a;
   --tbd-bg: #fff4c2;
   --tbd-ink: #5a4300;
-  --measure: 40rem;
-  --measure-wide: 50rem;
+  --measure: 62rem;
+  --measure-wide: 78rem;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -62,7 +62,7 @@ summary:focus-visible {
 .page {
   max-width: var(--measure-wide);
   margin: 0 auto;
-  padding: 2.5rem 1.25rem 4rem;
+  padding: 2.5rem 2rem 4rem;
 }
 
 /* Masthead */
