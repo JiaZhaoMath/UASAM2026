@@ -21,9 +21,8 @@ Live site: https://jiazhaomath.github.io/UASAM2026/
 Search `index.html` for `tbd`. Each placeholder is a yellow `<span class="tbd">…</span>`
 with an HTML comment next to it saying what to put there.
 
-1. Contact / submission email (appears twice: "Call for talks" and "Organizers and contact").
-2. Saturday parking guidance under "Venue".
-3. The nine talk slots in the schedule table. Replace each `Faculty Talk n` /
+1. Saturday parking guidance under "Venue".
+2. The nine talk slots in the schedule table. Replace each `Faculty Talk n` /
    `Student Talk n` cell with `Speaker Name (Campus) — Talk title` and drop `class="slot"`.
 
 When the schedule is final, change the heading "Tentative schedule" to "Schedule" and
