@@ -23,6 +23,9 @@ with an HTML comment next to it saying what to put there.
 
 1. The nine talk slots in the schedule table. Replace each `Faculty Talk n` /
    `Student Talk n` cell with `Speaker Name (Campus) — Talk title` and drop `class="slot"`.
+2. The welcome-remarks speaker, currently shown as "Welcome remarks (to be announced)".
+   Replace the parenthetical with the speaker, following the 2025 form: `Welcome remarks by
+   Department Chair Dr. Name`. Mirror the change in `../38th_Applied_Math_Meeting_Schedule.tex`.
 
 When the schedule is final, change the heading "Tentative schedule" to "Schedule" and
 rebuild the PDF in `assets/` from `../38th_Applied_Math_Meeting_Schedule.tex`.
