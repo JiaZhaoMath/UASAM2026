@@ -5,31 +5,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Previous meetings: University of Alabama System Applied Mathematics Meeting</title>
 <meta name="description" content="Programs and abstracts of previous Annual University of Alabama System Applied Mathematics Meetings.">
-<link rel="stylesheet" href="style.css?v=20260908d">
+<link rel="stylesheet" href="style.css?v=20260908e">
 <!--
   To add a year: copy the <section> block below, give it a new id (e.g. meeting-2026),
   place it ABOVE the older ones, and put the program PDF in assets/.
+
+  Every top-level block is a full-width band carrying its own background; the
+  inner <div class="wrap"> holds the text measure. Alternate the tinted band
+  (class="band band--tint") and the plain one (class="band") between sections,
+  and add each new id to the <nav class="toc"> list.
 -->
 </head>
 <body>
-<div class="page">
 
-<header class="masthead">
-  <h1>Previous meetings</h1>
-  <p class="when-where">
-    <span>Annual University of Alabama System Applied Mathematics Meeting</span>
-  </p>
-  <p class="tentative">The meeting rotates among the campuses of the University of Alabama System. Programs and abstracts of past meetings are collected here.</p>
+<header class="masthead" id="top">
+  <div class="wrap">
+    <h1>Previous meetings</h1>
+    <p class="when-where">
+      <span>Annual University of Alabama System Applied Mathematics Meeting</span>
+    </p>
+    <p class="tentative">The meeting rotates among the campuses of the University of Alabama System. Programs and abstracts of past meetings are collected here.</p>
+  </div>
 </header>
 
 <nav class="toc" aria-label="Site">
-  <ul>
-    <li><a href="index.html">2026 meeting (current)</a></li>
-    <li><a href="#meeting-2025">2025</a></li>
-  </ul>
+  <div class="wrap">
+    <a class="toc-home" href="#top">Previous meetings</a>
+    <ul>
+      <li><a href="index.html">2026 meeting (current)</a></li>
+      <li><a href="#meeting-2025">2025</a></li>
+    </ul>
+  </div>
 </nav>
 
-<section id="meeting-2025">
+<section id="meeting-2025" class="band band--tint">
+  <div class="wrap">
   <h2>The 37th meeting, 2025</h2>
   <p>The 37th Annual University of Alabama System Applied Mathematics Meeting was held at the University of Alabama in Huntsville on Saturday, November 1, 2025, with welcome remarks by Department Chair Dr. Toka Diagana. <a href="assets/37thAppliedMathMeeting_UAH.pdf">Program and abstracts (PDF)</a>.</p>
   <ul class="talks">
@@ -82,12 +92,72 @@
       </details>
     </li>
   </ul>
+  </div>
 </section>
 
 <footer>
-  <p><a href="index.html">Back to the 38th meeting, 2026</a>. Page last updated September 8, 2026.</p>
+  <div class="wrap">
+    <p><a href="index.html">Back to the 38th meeting, 2026</a>. Page last updated September 8, 2026.</p>
+  </div>
 </footer>
 
-</div>
+<script>
+/* Pins the section navigation and marks the section currently being read.
+   Plain vanilla JS, no library. The page works fully without it. */
+(function () {
+  var nav = document.querySelector('.toc');
+  if (!nav) return;
+
+  var onScroll = function () {
+    nav.classList.toggle('is-stuck', nav.getBoundingClientRect().top <= 0);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* Anchor jumps must clear the pinned bar. Its height changes when the links
+     wrap, so measure it rather than trusting the value in the stylesheet. */
+  var setNavHeight = function () {
+    var h = Math.ceil(nav.getBoundingClientRect().height) + 12;
+    document.documentElement.style.setProperty('--nav-height', h + 'px');
+  };
+  setNavHeight();
+  window.addEventListener('resize', setNavHeight);
+
+  if (!('IntersectionObserver' in window)) return;
+
+  var links = {}, sections = [], seen = Object.create(null);
+  Array.prototype.forEach.call(nav.querySelectorAll('a[href^="#"]'), function (a) {
+    var target = document.getElementById(a.getAttribute('href').slice(1));
+    if (target && target.tagName === 'SECTION') { links[target.id] = a; sections.push(target); }
+  });
+  if (!sections.length) return;
+
+  var mark = function (current) {
+    for (var id in links) links[id].classList.toggle('is-current', id === current);
+  };
+
+  var update = function () {
+    var doc = document.documentElement;
+    /* The last section is shorter than the detection band, so it would never
+       match on its own: at the end of the page it is what is being read. */
+    if (window.scrollY + window.innerHeight >= doc.scrollHeight - 2) {
+      mark(sections[sections.length - 1].id);
+      return;
+    }
+    var current = null;
+    sections.forEach(function (s) { if (seen[s.id]) current = s.id; });
+    if (current) mark(current);
+    else if (window.scrollY < sections[0].offsetTop) mark(null);
+  };
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) { seen[e.target.id] = e.isIntersecting; });
+    update();
+  }, { rootMargin: '-76px 0px -70% 0px' });
+  sections.forEach(function (s) { observer.observe(s); });
+  window.addEventListener('scroll', update, { passive: true });
+})();
+</script>
+
 </body>
 </html>
