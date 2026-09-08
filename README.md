@@ -10,7 +10,7 @@ Live site: https://jiazhaomath.github.io/UASAM2026/
 | File | Purpose |
 |---|---|
 | `index.html` | The 2026 meeting: schedule, call for talks, venue, organizers |
-| `previous-meetings.html` | Programs and abstracts of past meetings (2025 so far); add a section per year |
+| `previous-meetings.html` | 2025 program and abstracts. Kept in the repo but **not linked** from `index.html`; re-add the nav entry there to publish it |
 | `style.css` | Hand-written stylesheet. No frameworks, no external fonts or scripts |
 | `assets/38th_Applied_Math_Meeting_Schedule.pdf` | Tentative schedule (built from the `.tex` in the parent folder) |
 | `assets/37thAppliedMathMeeting_UAH.pdf` | 2025 program and abstracts |
