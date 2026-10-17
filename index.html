@@ -5,14 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>UASAM 2026: The 38th Annual University of Alabama System Applied Mathematics Meeting</title>
 <meta name="description" content="The 38th Annual University of Alabama System Applied Mathematics Meeting, Saturday, November 7, 2026, at The University of Alabama, Tuscaloosa. Program, call for talks, venue, and organizers.">
-<link rel="stylesheet" href="style.css?v=20260908e">
+<link rel="stylesheet" href="style.css?v=20261017">
 <!--
   HOW TO EDIT THIS PAGE
   Fields still to be filled in before announcing are marked with <span class="tbd">…</span>.
   Search this file for "tbd" to find them all:
-    1. The nine talk slots in the schedule table: replace each
-       "Faculty Talk n" / "Student Talk n" placeholder with
-       Speaker Name (Campus) — Talk title, then remove the class="slot".
+    1. The three open student slots in the schedule table (class="slot").
+       Each talk is recorded in abstracts/<campus>-<speaker>.md; render it as
+         <td><span class="talk-title">Title</span>
+             <span class="speaker">Dr. Name, Campus</span>
+             <details><summary>Abstract</summary><p>…</p></details></td>
+       and mirror the row in ../38th_Applied_Math_Meeting_Schedule.tex.
+    2. The welcome-remarks speaker, shown as "(to be announced)".
   When the schedule is final, change "Tentative schedule" to "Schedule" and
   regenerate assets/38th_Applied_Math_Meeting_Schedule.pdf from the .tex source.
 
@@ -60,25 +64,49 @@
     <p>All talks take place in Gordon Palmer Hall, Room 346 (GP 346). Coffee and light refreshments are provided in GP 302. Lunch is not provided; the midday break is scheduled so that participants may arrange lunch on their own. All times are Central Time.</p>
 
     <table class="schedule">
-      <caption>Saturday, November 7, 2026. Speakers and titles will be added as they are confirmed.</caption>
+      <caption>Saturday, November 7, 2026. Six of nine talks are confirmed; the remaining speakers will be added as they are confirmed. Select Abstract under a title to expand it.</caption>
       <thead>
         <tr><th scope="col">Time</th><th scope="col">Activity</th></tr>
       </thead>
       <tbody>
         <tr class="break"><th scope="row">9:30–10:00 a.m.</th><td>Coffee, refreshments, and arrival (GP 302)</td></tr>
         <tr><th scope="row">10:00–10:10 a.m.</th><td>Welcome remarks (to be announced)</td></tr>
-        <!-- Replace each placeholder below with: Speaker Name (Campus) — Talk title -->
-        <tr><th scope="row">10:10–10:50 a.m.</th><td class="slot">Faculty Talk 1</td></tr>
-        <tr><th scope="row">10:50–11:30 a.m.</th><td class="slot">Faculty Talk 2</td></tr>
-        <tr><th scope="row">11:30 a.m.–12:10 p.m.</th><td class="slot">Faculty Talk 3</td></tr>
+        <!-- Talk cells are rendered from abstracts/*.md; open slots keep class="slot" -->
+        <tr><th scope="row">10:10–10:50 a.m.</th><td>
+          <span class="talk-title">Learning the Invisible: Discovering Hidden Dynamics through Latent Lie-Poisson Neural Networks</span>
+          <span class="speaker">Dr. Vakhtang Putkaradze, The University of Alabama</span>
+          <details><summary>Abstract</summary><p>Many systems in mechanics, robotics, fluids, plasmas, and control have dynamics that are simplest in hidden momentum variables rather than in directly observed positions and velocities. This creates a natural question: can one learn the reduced physical dynamics from observable motion alone?</p><p>I will describe Latent Lie-Poisson Neural Networks (LLPNNs), a geometric machine-learning method that uses symmetry and Noether’s theorem to reconstruct hidden momentum trajectories from observed group motion. A neural network then learns the reduced Hamiltonian dynamics on the corresponding Lie-Poisson space, while Lie-group integration preserves the relevant geometric constraints over long times.</p><p>Examples include a generalized rigid body, Kirchhoff’s underwater vehicle, and multi-agent controlled vehicle systems. The results show that geometric reconstruction can improve long-time prediction in cases where black-box observable-space models do not contain enough information to define a closed dynamical system.</p></details>
+        </td></tr>
+        <tr><th scope="row">10:50–11:30 a.m.</th><td>
+          <span class="talk-title">Multiscale Analysis in Momentum Space for Multi-Dimensional Quasi-Periodic Schrödinger Operators</span>
+          <span class="speaker">Dr. Yulia Karpeshina, University of Alabama at Birmingham</span>
+          <details><summary>Abstract</summary><p>We consider Schrödinger operators <i>H</i> = −Δ + <i>V</i>(<i>x</i>) in ℝ<sup>d</sup>, <i>d</i> ≥ 2, with quasi-periodic potentials <i>V</i>(<i>x</i>). We prove that the absolutely continuous spectrum of a generic <i>H</i> contains a semi-axis [λ<sub>*</sub>, ∞). We also construct a family of eigenfunctions of the absolutely continuous spectrum; these eigenfunctions are small perturbations of the exponentials. The existence of ballistic transport is proven. The proof is based on the multi-scale analysis in the momentum space. This is joint work with Leonid Parnovski and Roman Shterenberg.</p></details>
+        </td></tr>
+        <tr><th scope="row">11:30 a.m.–12:10 p.m.</th><td>
+          <span class="talk-title">Principles of Engineering Adaptation: Lessons from Complex Systems Across Scales</span>
+          <span class="speaker">Dr. Satyaki Roy, University of Alabama in Huntsville</span>
+          <details><summary>Abstract</summary><p>Complex systems often achieve robustness, efficiency, and adaptability without centralized control. System-level capabilities emerge from the organization of local interactions, feedback, and adaptation across multiple scales. This talk explores how these principles can inform the engineering of adaptive networked systems, drawing on examples from biological, technological, and healthcare systems. We begin with transcriptional regulatory networks, where recurring network motifs and their higher-order organization reveal structural principles associated with efficiency, robustness, and response to perturbations, motivating bio-inspired approaches to distributed sensing, in which local feedback and self-regulation enable sensor networks to balance energy consumption, information throughput, and quality of service. We extend these ideas to healthcare, where decentralized and federated learning provides a framework for collaborative intelligence under constraints of privacy, data ownership, heterogeneity, and trust. Finally, we consider systems in which adaptation occurs across coupled network layers, focusing on the interplay between information diffusion and infectious disease transmission. We develop a multiplex network framework in which social influence propagates through an inferred social network while disease dynamics evolve through a physical-contact network governed by epidemic dynamics. This coupling provides a computational framework for studying behavioral response, quarantine, and epidemic control when the underlying social and physical networks are only partially observable. Across these domains, we conclude that a common principle emerges: effective adaptation depends not only on individual components, but on how they are organized and how they interact with one another and their environment.</p></details>
+        </td></tr>
         <tr class="break"><th scope="row">12:10–1:30 p.m.</th><td>Lunch break (on your own) and informal discussion (GP 302)</td></tr>
-        <tr><th scope="row">1:30–1:50 p.m.</th><td class="slot">Undergraduate &amp; Graduate Student Talk 1</td></tr>
-        <tr><th scope="row">1:50–2:10 p.m.</th><td class="slot">Undergraduate &amp; Graduate Student Talk 2</td></tr>
-        <tr><th scope="row">2:10–2:30 p.m.</th><td class="slot">Undergraduate &amp; Graduate Student Talk 3</td></tr>
+        <tr><th scope="row">1:30–1:50 p.m.</th><td>
+          <span class="talk-title">CN–EMAC for Incompressible Flows with Parametric Uncertainty</span>
+          <span class="speaker">Neethu Suma Raveendran, University of Alabama at Birmingham</span>
+          <details><summary>Abstract</summary><p>Accurate simulation of incompressible flows becomes particularly challenging when physical parameters are uncertain and the finite element velocity satisfies the incompressibility constraint only weakly. In this talk, we present a fully discrete Crank–Nicolson energy–momentum–angular-momentum conserving (CN–EMAC) finite element method for parameterized Navier–Stokes equations. It is coupled with stochastic collocation method, reducing the stochastic problem to independent deterministic solves at the collocation points.</p><p>We establish unconditional energy stability and derive a velocity error estimate of order <i>O</i>(<i>h</i><sup><i>k</i></sup> + Δ<i>t</i><sup>2</sup>). For inviscid, unforced flow, the fully converged scheme without grad–div stabilization conserves kinetic energy, linear momentum, and angular momentum. Numerical experiments verify the predicted accuracy and demonstrate the method’s conservation properties and robustness for several benchmark flows.</p></details>
+        </td></tr>
+        <tr><th scope="row">1:50–2:10 p.m.</th><td>
+          <span class="talk-title">Exploration of an Epidemiological Model of Hepatitis B</span>
+          <span class="speaker">Daniel Chaviers, University of Alabama in Huntsville</span>
+          <details><summary>Abstract</summary><p>Infection with the hepatitis B virus (HBV) causes long-term harm to the liver, often resulting in cirrhosis, liver failure, and liver cancer. HBV is transmitted via fluid contact, and a particular concern is transmission in childbirth. Vaccination can prevent infection, and is over 95% effective, but vaccination is not universal. In this talk, we provide a brief overview of a SEICR-type epidemiological model for the disease. We investigate various aspects of the model that are of interest in more general investigations of dynamical systems (e.g. well-posedness, equilibria, stability), and explain their application to our model. We follow up with a control-theoretic analysis on the role of vaccination in our model, and pre-empt questions for future research into the control of HBV and the mathematical role of vertical transmission.</p></details>
+        </td></tr>
+        <tr><th scope="row">2:10–2:30 p.m.</th><td class="slot">Undergraduate &amp; Graduate Student Talk (The University of Alabama): speaker and title to be announced</td></tr>
         <tr class="break"><th scope="row">2:30–3:00 p.m.</th><td>Coffee break and refreshments (GP 302)</td></tr>
-        <tr><th scope="row">3:00–3:20 p.m.</th><td class="slot">Undergraduate &amp; Graduate Student Talk 4</td></tr>
-        <tr><th scope="row">3:20–3:40 p.m.</th><td class="slot">Undergraduate &amp; Graduate Student Talk 5</td></tr>
-        <tr><th scope="row">3:40–4:00 p.m.</th><td class="slot">Undergraduate &amp; Graduate Student Talk 6</td></tr>
+        <tr><th scope="row">3:00–3:20 p.m.</th><td>
+          <span class="talk-title">Dynamic Interpolation and Higher-Order Turbulence Scales in 3D Navier–Stokes Flows</span>
+          <span class="speaker">Moses Phiri, University of Alabama at Birmingham</span>
+          <details><summary>Abstract</summary><p>We investigate the three-dimensional unforced Navier–Stokes equations through the interaction between spatial analyticity and the geometric sparseness of regions of intense fluid activity (i.e., regions where the fluid’s motion varies sharply). Viewing higher-order derivative ratios as turbulence scales, we introduce time-weighted bridge inequalities quantifying ratios between lower- and higher-order derivative norms. These time weights provide a less restrictive environment for the ratios giving the construction more flexibility and they are chosen in such a way that the resulting lower bound on the radius of analyticity dominates the sparseness scale of the super-level sets, which indicates that the flow entered the dissipation regime. Combining this scale comparison with a harmonic-measure maximum principle on one-dimensional sparse sets yields a contraction in the relevant derivative norm, thereby excluding a general class of blow-up scenarios. Consequently, the strong solution extends analytically beyond the candidate blow-up time.</p></details>
+        </td></tr>
+        <tr><th scope="row">3:20–3:40 p.m.</th><td class="slot">Undergraduate &amp; Graduate Student Talk (University of Alabama in Huntsville): speaker and title to be announced</td></tr>
+        <tr><th scope="row">3:40–4:00 p.m.</th><td class="slot">Undergraduate &amp; Graduate Student Talk (The University of Alabama): speaker and title to be announced</td></tr>
         <tr class="break"><th scope="row">4:00–4:10 p.m.</th><td>Break</td></tr>
         <tr><th scope="row">4:10–4:30 p.m.</th><td>Faculty and student discussions (students in GP 302, faculty in GP 346)</td></tr>
       </tbody>
@@ -146,7 +174,7 @@
 
 <footer class="band--tint">
   <div class="wrap">
-    <p>The 38th Annual University of Alabama System Applied Mathematics Meeting. Page last updated September 8, 2026.</p>
+    <p>The 38th Annual University of Alabama System Applied Mathematics Meeting. Page last updated October 17, 2026.</p>
   </div>
 </footer>
 
