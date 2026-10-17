@@ -275,6 +275,20 @@ p { margin: 0 0 1rem; }
 .schedule tr.break td { padding-right: 0.5rem; }
 .schedule .slot { color: var(--ink-muted); font-style: italic; }
 
+/* Talk cells: title, speaker, and a collapsible abstract */
+.schedule .talk-title { display: block; color: var(--ink); font-weight: 600; }
+.schedule .speaker { display: block; color: var(--ink-muted); }
+.schedule details { margin-top: 0.35rem; }
+.schedule summary {
+  cursor: pointer;
+  color: var(--crimson);
+  width: max-content;
+  max-width: 100%;
+  font-size: 0.95rem;
+}
+.schedule summary:hover { color: var(--crimson-deep); text-decoration: underline; }
+.schedule details p { margin: 0.5rem 0 0; max-width: var(--measure); }
+
 .schedule-note {
   font-size: 0.95rem;
   color: var(--ink-muted);

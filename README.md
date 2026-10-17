@@ -12,23 +12,27 @@ Live site: https://jiazhaomath.github.io/UASAM2026/
 | `index.html` | The 2026 meeting: schedule, call for talks, venue, organizers |
 | `previous-meetings.html` | 2025 program and abstracts. Kept in the repo but **not linked** from `index.html`; re-add the nav entry there to publish it |
 | `style.css` | Hand-written stylesheet. No frameworks, no external fonts or scripts |
+| `abstracts/*.md` | One Markdown record per talk (speaker, campus, role, title, abstract); the source for the schedule cells. See `abstracts/README.md` |
 | `assets/38th_Applied_Math_Meeting_Schedule.pdf` | Tentative schedule (built from the `.tex` in the parent folder) |
 | `assets/37thAppliedMathMeeting_UAH.pdf` | 2025 program and abstracts |
 | `.nojekyll` | Tells GitHub Pages to serve the files as-is |
 
-## Before announcing: fields still marked TBD
+## Before announcing: fields still open
 
-Search `index.html` for `tbd`. Each placeholder is a yellow `<span class="tbd">…</span>`
-with an HTML comment next to it saying what to put there.
+Six of the nine talks are on the page (3 faculty, 3 students). Still open:
 
-1. The nine talk slots in the schedule table. Replace each `Faculty Talk n` /
-   `Student Talk n` cell with `Speaker Name (Campus) — Talk title` and drop `class="slot"`.
+1. Three student slots, each a muted `<td class="slot">` cell: 2:10 p.m. (UA), 3:20 p.m.
+   (UAH), 3:40 p.m. (UA). Program order keeps the host campus last in each afternoon
+   block. To fill one, write `abstracts/<campus>-<speaker>.md` and replace the cell with
+   the markup the other talks use: `<span class="talk-title">`, `<span class="speaker">`,
+   and a `<details><summary>Abstract</summary><p>…</p></details>` toggle.
 2. The welcome-remarks speaker, currently shown as "Welcome remarks (to be announced)".
    Replace the parenthetical with the speaker, following the 2025 form: `Welcome remarks by
-   Department Chair Dr. Name`. Mirror the change in `../38th_Applied_Math_Meeting_Schedule.tex`.
+   Department Chair Dr. Name`.
 
-When the schedule is final, change the heading "Tentative schedule" to "Schedule" and
-rebuild the PDF in `assets/` from `../38th_Applied_Math_Meeting_Schedule.tex`.
+Mirror every schedule change in `../38th_Applied_Math_Meeting_Schedule.tex`, rebuild with
+`latexmk -pdf -g` (plain `latexmk` may report "Nothing to do"), and copy the PDF to `assets/`.
+When the schedule is final, change the heading "Tentative schedule" to "Schedule".
 
 ## Editing and publishing
 
