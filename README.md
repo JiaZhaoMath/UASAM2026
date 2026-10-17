@@ -19,12 +19,13 @@ Live site: https://jiazhaomath.github.io/UASAM2026/
 
 ## Before announcing: fields still open
 
-Seven of the nine speakers are on the page (3 faculty, 4 students). Still open:
+Eight of the nine speakers are on the page (3 faculty, 5 students). Still open:
 
-0. Title and abstract for Robert Stephens (UAH, 3:20 p.m.): add a `<details>` toggle to
-   his cell once they arrive and fill `abstracts/uah-stephens.md`.
-1. Two UA student slots, each a muted `<td class="slot">` cell: 2:10 p.m. and 3:40 p.m.
-   Program order keeps the host campus last in each afternoon block. To fill one, write `abstracts/<campus>-<speaker>.md` and replace the cell with
+0. Titles and abstracts for Md Obaidul Haque (UA, 2:10 p.m.) and Robert Stephens (UAH,
+   3:20 p.m.): add a `<details>` toggle to each cell once they arrive and fill
+   `abstracts/ua-haque.md` and `abstracts/uah-stephens.md`.
+1. One UA student slot, a muted `<td class="slot">` cell at 3:40 p.m.
+   Program order keeps the host campus last in each afternoon block. To fill it, write `abstracts/<campus>-<speaker>.md` and replace the cell with
    the markup the other talks use: `<span class="talk-title">`, `<span class="speaker">`,
    and a `<details><summary>Abstract</summary><p>…</p></details>` toggle.
 2. The welcome-remarks speaker, currently shown as "Welcome remarks (to be announced)".
