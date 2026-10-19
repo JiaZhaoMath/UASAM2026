@@ -9,7 +9,7 @@ Live site: https://jiazhaomath.github.io/UASAM2026/
 
 | File | Purpose |
 |---|---|
-| `index.html` | The 2026 meeting: schedule, call for talks, venue, organizers |
+| `index.html` | The 2026 meeting: schedule, venue, organizers (call for talks commented out) |
 | `previous-meetings.html` | 2025 program and abstracts. Kept in the repo but **not linked** from `index.html`; re-add the nav entry there to publish it |
 | `style.css` | Hand-written stylesheet. No frameworks, no external fonts or scripts |
 | `abstracts/*.md` | One Markdown record per talk (speaker, campus, role, title, abstract); the source for the schedule cells. See `abstracts/README.md` |
