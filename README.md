@@ -21,9 +21,9 @@ Live site: https://jiazhaomath.github.io/UASAM2026/
 
 All nine speakers are on the page (3 faculty, 6 students). Still open:
 
-0. Titles and abstracts for Md Obaidul Haque (UA, 2:10 p.m.), Robert Stephens (UAH,
-   3:20 p.m.), and Matthias Dogbatsey (UA, 3:40 p.m.): fill `abstracts/ua-haque.md`,
-   `abstracts/uah-stephens.md`, and `abstracts/ua-dogbatsey.md` as they arrive, then give
+0. Titles and abstracts for Robert Stephens (UAH, 3:20 p.m.) and Matthias Dogbatsey
+   (UA, 3:40 p.m.): fill `abstracts/uah-stephens.md` and `abstracts/ua-dogbatsey.md` as
+   they arrive, then give
    each cell the markup the other talks use: `<span class="talk-title">`,
    `<span class="speaker">`, and a `<details><summary>Abstract</summary><p>…</p></details>`
    toggle. Program order keeps the host campus last in each afternoon block.
