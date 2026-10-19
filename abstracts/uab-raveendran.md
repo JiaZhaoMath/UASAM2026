@@ -4,7 +4,7 @@ role: student
 campus: University of Alabama at Birmingham
 campus_short: UAB
 title: CN–EMAC for Incompressible Flows with Parametric Uncertainty
-slot: 1:30–1:50 p.m.
+slot: 1:50–2:10 p.m.
 source: ../../abstracts/uab_Neethu-Suma-Raveendran-student.pdf
 ---
 
