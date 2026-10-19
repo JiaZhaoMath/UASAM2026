@@ -25,11 +25,11 @@ The body is the abstract, verbatim from the speaker, with only typography normal
 (en dashes, Unicode math such as `ℝ^d`, `O(h^k + Δt^2)`). Coauthors are not shown on the
 speaker line; a closing sentence "This is joint work with …" ends the abstract instead.
 
-## Program order (decided 2026-10-17)
+## Program order (decided 2026-10-17; 1:30 and 1:50 swapped 2026-10-19)
 
 Morning, faculty (40 min): UA, UAB, UAH.
 Afternoon, students (20 min), host campus (UA) last in each block:
-1:30 UAB, 1:50 UAH, 2:10 UA; 3:00 UAB, 3:20 UAH, 3:40 UA.
+1:30 UAH, 1:50 UAB, 2:10 UA; 3:00 UAB, 3:20 UAH, 3:40 UA.
 
 ## Open slots
 
