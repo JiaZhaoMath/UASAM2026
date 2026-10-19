@@ -33,13 +33,10 @@ Afternoon, students (20 min), host campus (UA) last in each block:
 
 ## Open slots
 
-Two speakers are confirmed with title and abstract pending: Md Obaidul Haque (UA,
-2:10–2:30 p.m., `ua-haque.md`) and Robert Stephens (UAH, 3:20–3:40 p.m., `uah-stephens.md`).
-Speaker slot still open:
-
-| Slot | Campus | File to add |
-|---|---|---|
-| 3:40–4:00 p.m. | UA student | `ua-<surname>.md` |
+No speaker slots are open. Three speakers are confirmed with title and abstract pending:
+Md Obaidul Haque (UA, 2:10–2:30 p.m., `ua-haque.md`), Robert Stephens (UAH,
+3:20–3:40 p.m., `uah-stephens.md`), and Matthias Dogbatsey (UA, 3:40–4:00 p.m.,
+`ua-dogbatsey.md`).
 
 ## Adding a talk
 
