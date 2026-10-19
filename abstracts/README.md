@@ -33,8 +33,7 @@ Afternoon, students (20 min), host campus (UA) last in each block:
 
 ## Open slots
 
-No speaker slots are open. One speaker is confirmed with title and abstract pending:
-Robert Stephens (UAH, 3:20–3:40 p.m., `uah-stephens.md`).
+No speaker slots are open, and every talk has its title and abstract (as of 2026-10-19).
 
 ## Adding a talk
 

@@ -19,12 +19,9 @@ Live site: https://jiazhaomath.github.io/UASAM2026/
 
 ## Before announcing: fields still open
 
-All nine speakers are on the page (3 faculty, 6 students). Still open:
+All nine speakers are on the page (3 faculty, 6 students), each with a title and abstract.
+Still open:
 
-0. Title and abstract for Robert Stephens (UAH, 3:20 p.m.): fill `abstracts/uah-stephens.md`
-   when they arrive, then give the cell the markup the other talks use: `<span class="talk-title">`,
-   `<span class="speaker">`, and a `<details><summary>Abstract</summary><p>…</p></details>`
-   toggle. Program order keeps the host campus last in each afternoon block.
 1. The welcome-remarks speaker, currently shown as "Welcome remarks (to be announced)".
    Replace the parenthetical with the speaker, following the 2025 form: `Welcome remarks by
    Department Chair Dr. Name`.
