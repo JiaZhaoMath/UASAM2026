@@ -3,7 +3,8 @@
 Website for **The 38th Annual University of Alabama System Applied Mathematics Meeting**,
 Saturday, November 7, 2026, The University of Alabama, Tuscaloosa.
 
-Live site: https://jiazhaomath.github.io/UASAM2026/
+Live site: https://zhaojia.net/UASAM2026/ (since 2026-10-20, when zhaojia.net became the custom domain of
+the JiaZhaoMath GitHub Pages user site; the old https://jiazhaomath.github.io/UASAM2026/ redirects there)
 
 ## What is here
 
