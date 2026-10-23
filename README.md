@@ -21,11 +21,8 @@ the JiaZhaoMath GitHub Pages user site; the old https://jiazhaomath.github.io/UA
 ## Before announcing: fields still open
 
 All nine speakers are on the page (3 faculty, 6 students), each with a title and abstract.
-Still open:
-
-1. The welcome-remarks speaker, currently shown as "Welcome remarks (to be announced)".
-   Replace the parenthetical with the speaker, following the 2025 form: `Welcome remarks by
-   Department Chair Dr. Name`.
+Still open: none. The welcome row reads just "Welcome remarks" with no speaker named. If a
+speaker is named later, follow the 2025 form: `Welcome remarks by Department Chair Dr. Name`.
 
 Mirror every schedule change in `../38th_Applied_Math_Meeting_Schedule.tex`, rebuild with
 `latexmk -pdf -g` (plain `latexmk` may report "Nothing to do"), and copy the PDF to `assets/`.
