@@ -4,7 +4,7 @@ role: student
 campus: University of Alabama at Birmingham
 campus_short: UAB
 title: Dynamic Interpolation and Higher-Order Turbulence Scales in 3D Navier–Stokes Flows
-slot: 3:00–3:20 p.m.
+slot: 3:10–3:30 p.m.
 source: ../../abstracts/uab_Moses-Phiri-student.txt
 ---
 
