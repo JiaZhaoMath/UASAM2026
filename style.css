@@ -316,6 +316,7 @@ address { font-style: normal; }
 .lunch-list { margin: 0; padding-left: 1.25rem; }
 .lunch-list li { margin: 0.3rem 0; }
 .lunch .pick { color: var(--crimson); font-weight: 600; }
+.lunch .rating { color: var(--ink-muted); font-weight: 400; font-size: 0.95em; }
 
 .map { max-width: var(--measure-wide); margin: 1.25rem 0 0; }
 .map iframe {
