@@ -4,7 +4,7 @@ role: student
 campus: The University of Alabama
 campus_short: UA
 title: LLM-Driven Behavioral Heterogeneity in Networked SEIR(S) Models with GAM Distillation
-slot: 2:20–2:40 p.m.
+slot: 2:10–2:30 p.m.
 source: ../../abstracts/ua_haque_student.md
 ---
 

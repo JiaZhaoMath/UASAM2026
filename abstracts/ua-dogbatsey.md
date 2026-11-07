@@ -4,7 +4,7 @@ role: student
 campus: The University of Alabama
 campus_short: UA
 title: "A Diffuse-Interface Variational Implicit Solvation Model with the Size-Modified Poisson–Boltzmann Equation: Formulation, Numerical Computation, and Stern-Layer Formation"
-slot: 3:50–4:10 p.m.
+slot: 3:40–4:00 p.m.
 source: ../../abstracts/ua_dogbatsey_student.md
 ---
 

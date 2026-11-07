@@ -4,7 +4,7 @@ role: student
 campus: University of Alabama in Huntsville
 campus_short: UAH
 title: "Edge Weightings, Cycle Packings, and Zero Forcing in Graphs"
-slot: 3:30–3:50 p.m.
+slot: 3:20–3:40 p.m.
 source: ../../abstracts/uah_stephens_student.md
 ---
 
