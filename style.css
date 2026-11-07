@@ -274,6 +274,18 @@ p { margin: 0 0 1rem; }
 .schedule tr.break th { padding-left: 0.5rem; }
 .schedule tr.break td { padding-right: 0.5rem; }
 .schedule .slot { color: var(--ink-muted); font-style: italic; }
+.schedule tr.session td {
+  padding-top: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  border-bottom: 1px solid var(--rule-strong);
+}
+.schedule tr.session .chair {
+  display: block;
+  font-weight: 400;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+}
 
 /* Talk cells: title, speaker, and a collapsible abstract */
 .schedule .talk-title { display: block; color: var(--ink); font-weight: 600; }
@@ -344,7 +356,7 @@ address { font-style: normal; }
    auto-fit leaves a lone card stranded on a second row at common widths. */
 @media (min-width: 34rem) { .people { grid-template-columns: repeat(2, 1fr); } }
 @media (min-width: 56rem) { .people { grid-template-columns: repeat(3, 1fr); } }
-@media (min-width: 72rem) { .people { grid-template-columns: repeat(5, 1fr); } }
+@media (min-width: 72rem) { .people { grid-template-columns: repeat(3, 1fr); } }
 .people li {
   padding: 1rem 1.1rem 1.1rem;
   background: var(--paper);
