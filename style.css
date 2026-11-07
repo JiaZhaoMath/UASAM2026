@@ -309,6 +309,14 @@ dd { margin: 0.15rem 0 0; }
 
 address { font-style: normal; }
 
+/* Lunch options (inside the venue list) */
+.lunch { scroll-margin-top: var(--nav-height); }
+.lunch p { margin: 0 0 0.5rem; }
+.lunch h3 { margin: 0.9rem 0 0.25rem; font-size: 1rem; }
+.lunch-list { margin: 0; padding-left: 1.25rem; }
+.lunch-list li { margin: 0.3rem 0; }
+.lunch .pick { color: var(--crimson); font-weight: 600; }
+
 .map { max-width: var(--measure-wide); margin: 1.25rem 0 0; }
 .map iframe {
   display: block;
