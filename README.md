@@ -11,7 +11,8 @@ the JiaZhaoMath GitHub Pages user site; the old https://jiazhaomath.github.io/UA
 | File | Purpose |
 |---|---|
 | `index.html` | The 2026 meeting: schedule, venue, organizers (call for talks commented out) |
-| `previous-meetings.html` | 2025 program and abstracts. Kept in the repo but **not linked** from `index.html`; re-add the nav entry there to publish it |
+| `previous-meetings.html` | Meeting history (1995–2026): overview table of all meetings plus programs where found. Linked from the `index.html` nav as "Past meetings". **Generated** by `../history_sources/build_history_page.py` from `../history_sources/meetings.py` (private folder outside the repo); sources in `../meeting_history.md` |
+| `assets/history/` | Archived programs of past meetings (2012, 2013, 2017, 2018, 2019, 2021), copied from department sites / the Internet Archive |
 | `style.css` | Hand-written stylesheet. No frameworks, no external fonts or scripts |
 | `abstracts/*.md` | One Markdown record per talk (speaker, campus, role, title, abstract); the source for the schedule cells. See `abstracts/README.md` |
 | `assets/38th_Applied_Math_Meeting_Schedule.pdf` | Tentative schedule (built from the `.tex` in the parent folder) |
